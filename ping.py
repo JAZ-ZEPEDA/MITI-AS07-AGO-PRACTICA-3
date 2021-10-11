@@ -24,8 +24,6 @@ cantidad = int(input())
 print('connecting to {} port {}'.format(*server_address))
 sock.connect(server_address)
 
-
-
 try:
     for num in range(0, cantidad, 1):
         m = str.encode('{ "saludo": "' + message + '","tipo":0,"secuencia": ' + str(num) + '}')
